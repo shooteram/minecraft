@@ -1,3 +1,8 @@
+all:
+	make linux
+	make windows
+	make darwin
+
 windows:
 	make windows_amd64
 	make windows_386
@@ -37,8 +42,3 @@ amd64:
 	make windows_386
 	make linux_386
 	make darwin_386
-
-all:
-	make linux
-	make windows
-	make darwin
